@@ -1,14 +1,9 @@
-# Logs
-logs
-*.log
+# Dependencies
+node_modules/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
-.pnpm-debug.log*
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+pnpm-debug.log*
 
 # Runtime data
 pids
@@ -20,7 +15,7 @@ pids
 lib-cov
 
 # Coverage directory used by tools like istanbul
-coverage
+coverage/
 *.lcov
 
 # nyc test coverage
@@ -39,7 +34,6 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -97,40 +91,76 @@ dist
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public
 
-# vuepress build output
-.vuepress/dist
+# Storybook build outputs
+.out
+.storybook-out
+storybook-static
 
-# vuepress v2.x temp and cache directory
-.temp
-.cache
+# Rollup.js default build output
+dist/
 
-# vitepress build output
-**/.vitepress/dist
+# Uncomment if using TypeScript compiled output
+# **/*.js
+# **/*.d.ts
 
-# vitepress cache directory
-**/.vitepress/cache
+# Temporary folders
+tmp/
+temp/
 
-# Docusaurus cache and generated files
-.docusaurus
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Serverless directories
-.serverless/
+# Logs
+logs
+*.log
 
-# FuseBox cache
-.fusebox/
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# DynamoDB Local files
-.dynamodb/
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
-# TernJS port file
-.tern-port
+# Build output
+build/
+dist/
 
-# Stores VSCode versions used for testing VSCode extensions
-.vscode-test
+# Test files
+test-results/
+coverage/
 
-# yarn v2
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
-.pnp.*
+# Database files (if using local databases)
+*.sqlite
+*.db
+
+# Artillery test results
+artillery-report.html
+
+# PM2 logs
+.pm2/
+
+# Local development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TypeScript incremental compilation
+*.tsbuildinfo
+
+# Webpack
+.webpack/
